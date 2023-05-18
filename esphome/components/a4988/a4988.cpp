@@ -48,7 +48,7 @@ void A4988::loop() {
   this->dir_pin_->digital_write(dir == 1);
   delayMicroseconds(50);
   this->step_pin_->digital_write(true);
-  delayMicroseconds(1);
+  delayMicroseconds(0);
   this->step_pin_->digital_write(false);
 }
 
